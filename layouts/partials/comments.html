@@ -1,0 +1,23 @@
+<section class="article discussion">
+    <script>
+        function loadComment() {
+            let theme = localStorage.getItem("pref-theme") == "dark" ? 'github-dark' : 'github-light';
+            let s = document.createElement('script');
+            s.src = 'https://utteranc.es/client.js';
+            s.setAttribute('repo', 'JCapucho/blog');
+            s.setAttribute('issue-term', 'pathname');
+            s.setAttribute('label', 'comments');
+            s.setAttribute('theme', theme);
+            s.setAttribute('crossorigin', 'anonymous');
+            s.setAttribute('async', '');
+            document.querySelector('section.article.discussion').innerHTML = '';
+            document.querySelector('section.article.discussion').appendChild(s);
+        }
+
+        loadComment();
+
+        document.getElementById("theme-toggle").addEventListener("click", () => {
+            loadComment();
+        });
+    </script>
+</section>

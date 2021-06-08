@@ -1,0 +1,16 @@
+---
+title: "Introduction"
+date: 2021-06-07T20:15:38+01:00
+draft: false
+showtoc: false
+---
+
+Let's try this again, so last time I wrote something here was over a year ago. During that time I became annoyed with the amount of maintenance the blog required and the absurd number of vulnerabilities github sent me emails about, so I decided to start using a static site generator.
+
+I've settled with [[https://gohugo.io/][Hugo]] because of all the options considered with was the only one who had all the things I needed, [[orgmode.org][org-mode]] (Since the last post I switched from vscode to emacs and I'm loving it) and fast iteration times.
+
+And I think it looks pretty good I ended up using the awesome [[https://github.com/adityatelange/hugo-PaperMod/][PaperMod]] theme so now the color scheme shouldn't look like something from a decade ago and there's both a dark and light mode and I also finally added comments (They are backed by Github Issues using the fantastic [[https://github.com/utterance/utterances][utterances]] package).
+
+I don't know how frequently I'll update the blog, I've been mostly working on the glsl frontend of [[https://github.com/gfx-rs/naga/][naga]] (for those who don't know naga is a shader translator that aims to replace spirv-cross in the [[https://github.com/gfx-rs][gfx]] project), maybe I'll write a simple guide on how to use it or of some of the more technical aspects of the implementation.
+
+But for now I wish the person reading this a good day and I hope to see you next time the blog is updated (probably next year, relevant [[https://xkcd.com/605][xhcd]]).
