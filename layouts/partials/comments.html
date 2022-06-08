@@ -1,7 +1,16 @@
 <section class="article discussion">
+    <center>
+    Loading Comments ...
+    </center>
+
     <script>
         function loadComment() {
-            let theme = localStorage.getItem("pref-theme") == "dark" ? 'github-dark' : 'github-light';
+            let theme_preference = localStorage.getItem("pref-theme");
+            let is_dark_theme = theme_preference
+                ? theme_preference == "dark"
+                : window.matchMedia('(prefers-color-scheme: dark)').matches;
+            let theme = is_dark_theme ? 'photon-dark' : 'github-light';
+
             let s = document.createElement('script');
             s.src = 'https://utteranc.es/client.js';
             s.setAttribute('repo', 'JCapucho/blog');
