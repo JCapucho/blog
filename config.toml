@@ -1,4 +1,4 @@
-baseURL = "https://blog.jcapucho.ml/"
+baseURL = "https://blog.jcapucho.com/"
 languageCode = "en-us"
 title = "Capucho's blog"
 paginate = 10
